@@ -22,5 +22,5 @@ The chatbot uses an extensive range of frameworks:-
 ### CONFUSION MATRIX
 
 <div style="display: flex; flex-direction: row;">
-  <img src="/assets/story_confusion_matrix.png" alt="Confusion matrix" style="width: 50%; height: auto;">
+  <img src="/assets/story_confusion_matrix.png" alt="Confusion matrix" style="width: 100%; height: auto;">
 </div>
