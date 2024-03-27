@@ -14,3 +14,7 @@ The chatbot uses an extensive range of frameworks:-
 <div style="display: flex; flex-direction: row;">
   <img src="/assets/Flow.png" alt="Flow Image" style="width: 50%;">
 </div>
+
+### SAMPLE
+
+![Sample conversation](/assets/sample.png)
