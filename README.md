@@ -15,11 +15,11 @@ The chatbot uses an extensive range of frameworks:-
   <img src="/assets/Flow.png" alt="Flow Image" style="width: 50%; height: auto;">
 </div>
 
-### SAMPLE
+## SAMPLE
 
 ![Sample conversation](/assets/sample.png)
 
-### CONFUSION MATRIX
+## CONFUSION MATRIX
 
 <div style="display: flex; flex-direction: row;">
   <img src="/assets/story_confusion_matrix.png" alt="Confusion matrix" style="width: 75%; height: auto;">
