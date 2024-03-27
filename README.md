@@ -12,8 +12,8 @@ The chatbot uses an extensive range of frameworks:-
 ## FLOW DIAGRAM AND CONFUSION MATRIX
 
 <div style="display: flex; flex-direction: row;">
-  <img src="/assets/Flow.png" alt="Flow Image" style="width: 50%;">
-  <img src="/assets/story_confusion_matrix.png" alt="Confusion matrix" style="width: 50%;">
+  <img src="/assets/Flow.png" alt="Flow Image" style="width: 50%; height: auto;">
+  <img src="/assets/story_confusion_matrix.png" alt="Confusion matrix" style="width: 50%; height: auto;">
 </div>
 
 ### SAMPLE
