@@ -9,7 +9,7 @@ The chatbot uses an extensive range of frameworks:-
 - RASA: The core of the chatbot is built using the Rasa framework, including Rasa NLU for Natural language Understanding and Rasa Core for story management.
 - TMDB API: The bot leveraged The Movie Database API to fetch information about movies including title, genre, vote average, director’s name, actor’s name, etc.
 
-## FLOW DIAGRAM AND CONFUSION MATRIX
+## FLOW DIAGRAM
 
 <div style="display: flex; flex-direction: row;">
   <img src="/assets/Flow.png" alt="Flow Image" style="width: 50%; height: auto;">
