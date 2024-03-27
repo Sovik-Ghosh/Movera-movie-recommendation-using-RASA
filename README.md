@@ -11,4 +11,4 @@ The chatbot uses an extensive range of frameworks:-
 
 ### FLOW DIAGRAM
 
-![](Movie-Recommender-using-RASA/assets/Flow.png)
+![](/assets/Flow.png)
