@@ -11,4 +11,6 @@ The chatbot uses an extensive range of frameworks:-
 
 ### FLOW DIAGRAM
 
-![](/assets/Flow.png)
+<div style="display: flex; flex-direction: row;">
+  <img src="/assets/Flow.png" alt="Flow Image" style="width: 50%;">
+</div>
