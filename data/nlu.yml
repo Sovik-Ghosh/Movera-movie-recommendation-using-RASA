@@ -1,0 +1,77 @@
+version: "3.1"
+
+nlu:
+- intent: FindMovies
+  examples: |
+    - Can you find me a movie to watch?
+    - I need to find a movie to watch
+    - Me and my friend need a movie to watch later
+    - I'm up for watching a movie.
+    - I'd like to watch a movie.
+    - I'd like to find a movie.
+    - I need to find a movie, any type works
+    - What about a movie? Can you make some suggestions?
+    - I want to find a movie.
+    - I want to watch a movie tonight, but I don't have any in mind.
+    - Can you find me a [Romance](genre) movie starring [Haaz Sleiman](starring)?
+    - Can you find a movie for me to watch that was directed by [Michael Chaves](director)?
+    - Can you find a movie for me with [Shayn Solberg](starring)?
+    - I want to watch a movie, preferably something by [Jenny Gage](director). The [romance](genre) genre would also work.
+    - No, don't really fancy that one either. Can you see if there's anything else? We quite like [fantasy](genre) films, especially stuff directed by [Neil Marshall](director).
+    - Find me a movie directed by [Anna Boden](director) in the [Adventure](genre) category.
+    - I'd like to watch a movie directed by [Malik Bendjelloul](director)
+    - Have anything else with [Huang Lu](starring)?
+    - Can you find a [drama](genre) film for me?
+    - Anything else? I want something directed by [Robin Bissell](director) and starring [Sam Rockwell](starring).
+    - How about something else like a [comic](genre) film directed by [Morton DaCosta](director)?
+    - Will you find me movies directed by [Tom McCarthy](director) starring [Walter the Dog](starring)?
+    - What else is there. I'm watching with my wife so maybe a [Rom-com](genre) would be good.
+    - I am in mood of watching a [Drama](genre) movie, so I want to find one.
+    - Can you see if there are some other movies? I usually enjoy watching a film directed by [Alfred Hitchcock](director), and for the film to be starring [ALix Talton](starring).
+    - I am looking for a [funny](genre) movie.
+    - I want a movie directed by [Harry Elfont](director) and starring [Harmoni Everett](starring).
+    - Do you have any movies with [Mike Colter](starring)?
+    - I am looking for a movie directed by [Elaine May](director) to watch. Find something starring [Rose Arrick](starring).
+    - What else do you have? I like [funny](genre) movies.
+    - I want to watch a movie but am having a hard time finding anything good in all these titles. Can you find me something that stars [Jeff Harding](starring)?
+    - What is the [genre](request) of the film?
+    - What [genre](request)?
+    - Who [directed](request) this?
+    - Who [directed](request) it?
+    - Who [directed](request) the movie?
+    - Maybe. Who's the [director](request)?
+    - Who [directed](request) this movie and what [genre](request) is it?
+    - Who is the [director](request)? What [kind](request) of movie is it?
+    - I don't know, what [genre](request) is the movie classified as and can you tell me who [directed](request) it?
+    - Who [starred](request) in the movie?
+    - Not sure.. is there [anything else](request_alt)?
+    - What are the [others](request_alt)?
+    - Can you find [anything else](request_alt)?
+    - Any [other films](request_alt)?
+
+- intent: Other
+  examples: |
+    - That will work.
+    - Sure.
+    - Ok, sounds good
+    - Yeah that one sounds better
+    - Yes, that works.
+    - Okay, sounds good.
+    - Sure.
+    - Let's go with that.
+    - Great.
+    - Sure thing.
+    - Sure. I've never heard of it, but we'll give it a shot.
+    - That's a good one.
+    - [No](negate), not right now. [Thanks](thanks).
+    - [No](negate), [thank](thanks) you.
+    - [No](negate), that's good [thanks](thanks)
+    - [No](negate) [thanks](thanks), that was all!
+    - [No](negate), [that is all](thanks). [Thanks](thanks).
+    - Not right now, [thanks](thanks).
+    - [Nope](negate), [thanks](thanks).
+    - [No](negate), that's it.
+    - [No](negate), [thanks](thanks).
+    - [No](negate), [thanks](thanks) a lot!
+    - [Nope](negate), [thanks](thanks) for the movie idea.
+    - [Nothing](negate) for now. I am [thankful](thanks).

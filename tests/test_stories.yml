@@ -1,0 +1,198 @@
+version: "3.1"
+
+stories:
+  - story: Test Conversation 1
+    steps:
+      - user: |
+          I'd like to watch a movie.
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          Great.
+      - intent: Other
+      - action: action_bye
+      - user: |
+          No thanks.
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 2
+    steps:
+      - user: |
+          I feel like I want to watch a movie, so help me find one!
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          That's good. That's all I need for now.
+      - intent: Other
+      - action: action_bye
+      - user: |
+          I am glad to have helped you.
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 3
+    steps:
+      - user: |
+          Can you find me a [Romance](genre) movie to watch?
+      - intent: FindMovies
+      - action: action_offer
+      - slot_was_set:
+          - genre: Romance
+      - user: |
+          What about the other movies?
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          Sure.
+      - intent: Other
+      - action: action_bye
+      - user: |
+          No. That is all. Thank you!
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 4
+    steps:
+      - user: |
+          I am looking for a movie to watch.
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          Any others? Find something in the [Comic](genre) genre.
+      - intent: FindMovies
+      - action: action_offer
+      - slot_was_set:
+          - genre: Comic
+      - user: |
+          Any others? I'm looking for something directed by [Jonathan Levine](director), and starring [O'Shea Jackson Jr](starring).
+      - intent: FindMovies
+      - action: action_offer
+      - slot_was_set:
+          - director: Jonathan Levine
+          - starring: O'Shea Jackson Jr
+      - user: |
+          Sounds perfect to me.
+      - intent: Other
+      - action: action_bye
+      - user: |
+          Nope, thank you!
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 5
+    steps:
+      - user: |
+          I'm having some friends over and need a movie to watch. Please find me some movies in the [comic](genre) genre.
+      - intent: FindMovies
+      - action: action_offer
+      - slot_was_set:
+          - genre: Comic
+      - user: |
+          Sounds good.
+      - intent: Other
+      - action: action_bye
+      - user: |
+          That's all, thank you.
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 6
+    steps:
+      - user: |
+          I'd like to watch a movie
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          Do you have other proposals?
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          Do you suggest me another movie?
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          I like that, thanks!
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 7
+    steps:
+      - user: |
+          I am searching for a movie to watch.
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          Who acted in this movie and who is the director?
+      - intent: Other
+      - action: action_bye
+      - user: |
+          Ok. This is perfect
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 8
+    steps:
+      - user: |
+          I want to watch a movie
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          What else do you propose to me?
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          I would prefer a movie with [Frederick Preston](starring)
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          This movie is fine, thanks
+      - intent: Other
+      - action: action_bye
+      - user: |
+          No, That's all
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 9
+    steps:
+      - user: |
+          Can you find me a movie? One that stars [Michael Cumpsty](starring).
+      - intent: FindMovies
+      - action: action_offer
+      - slot_was_set:
+          - starring: Michael Cumpsty
+      - user: |
+          Ok thanks. That's it for now
+      - intent: Other
+      - action: action_bye
+
+  - story: Test Conversation 10
+    steps:
+      - user: |
+          I want to watch a movie.
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          What genre is it?
+      - intent: Other
+      - action: action_bye
+      - user: |
+          What else do you have?
+      - intent: FindMovies
+      - action: action_offer
+      - user: |
+          How about something from [Tom McCarthy](director) or something starring [Jacqueline Brogan](starring)?
+      - intent: FindMovies
+      - action: action_offer
+      - slot_was_set:
+          - director: Tom McCarthy
+          - starring: Jacqueline Brogan
+      - user: |
+          I want to see that.
+      - intent: Other
+      - action: action_bye
+      - user: |
+          That is all today.
+      - intent: Other
+      - action: action_bye

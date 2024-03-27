@@ -1,0 +1,13 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: FindMovies
+  - action: action_offer
+
+- story: happy path 1
+  steps:
+  - intent: Other
+  - action: action_bye

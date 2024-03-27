@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+
+- rule: Always offer when intent is FindMovies
+  steps: 
+  - intent: FindMovies
+  - action: action_offer
+
+- rule: Always perform bye when intent is Other
+  steps:
+  - intent: Other
+  - action: action_bye

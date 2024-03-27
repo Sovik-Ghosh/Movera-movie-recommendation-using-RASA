@@ -1,0 +1,123 @@
+{
+  "": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 38
+  },
+  "action_offer": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19
+  },
+  "FindMovies": {
+    "precision": 0.4418604651162791,
+    "recall": 1.0,
+    "f1-score": 0.6129032258064516,
+    "support": 19
+  },
+  "[Jonathan Levine](director)": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "[O'Shea Jackson Jr](starring)": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "None": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 46
+  },
+  "[Frederick Preston](starring)": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "action_bye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19
+  },
+  "action_listen": {
+    "precision": 1.0,
+    "recall": 0.868421052631579,
+    "f1-score": 0.9295774647887324,
+    "support": 76
+  },
+  "[Jacqueline Brogan](starring)": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "Other": {
+    "precision": 0.5757575757575758,
+    "recall": 1.0,
+    "f1-score": 0.7307692307692308,
+    "support": 19
+  },
+  "[Romance](genre)": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 1
+  },
+  "[Tom McCarthy](director)": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "[Comic](genre)": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1
+  },
+  "[Michael Cumpsty](starring)": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "[comic](genre)": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1
+  },
+  "micro avg": {
+    "precision": 0.7883597883597884,
+    "recall": 0.6081632653061224,
+    "f1-score": 0.6866359447004607,
+    "support": 245
+  },
+  "macro avg": {
+    "precision": 0.657351127554616,
+    "recall": 0.7417763157894737,
+    "f1-score": 0.6837447867519426,
+    "support": 245
+  },
+  "weighted avg": {
+    "precision": 0.570754052149401,
+    "recall": 0.6081632653061224,
+    "f1-score": 0.5748748190430543,
+    "support": 245
+  },
+  "accuracy": 0.6081632653061224,
+  "conversation_accuracy": {
+    "accuracy": 0.0,
+    "correct": 0,
+    "with_warnings": 0,
+    "total": 10
+  }
+}

@@ -1,0 +1,148 @@
+version: "3.1"
+
+intents:
+  - FindMovies
+  - Other
+
+entities:
+  - title
+  - genre
+  - aggregate_rating
+  - starring
+  - director
+  - request
+  - request_alt
+  - negate
+  - thanks
+  - count
+
+slots:
+  title:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: title
+  genre:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: genre
+  aggregate_rating:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: aggregate_rating
+  starring:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: starring
+  director:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: director
+  count:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: count
+
+responses:
+  utter_offer:
+  - text: "How about {title}? It has an average rating of {aggregate_rating}."
+  - text: "How about {title}? It has an average rating of {aggregate_rating}."
+  - text: "There's {title}, rated {aggregate_rating}"
+  - text: "What about {title}? It's got a rating of {aggregate_rating}"
+  - text: "There's {title}, with an average rating of {aggregate_rating}"
+  - text: "{title} is rated {aggregate_rating}."
+  - text: "There's {title}, rated {aggregate_rating}."
+  - text: "How do you feel about {title}. Its rating is {aggregate_rating}."
+  - text: "I've got {title}. The rating is {aggregate_rating}."
+  - text: "There is a movie called {title} with a rating of {aggregate_rating}."
+  - text: "What do you think about {title}. It has an average rating of {aggregate_rating}"
+  - text: "I found the {title}, it has a {aggregate_rating} rating"
+  - text: "I can recommend you {title}, it is rated {aggregate_rating}"
+  - text: "{title} has a rating of {aggregate_rating}."
+  - text: "How about {title}? It has an average rating of {aggregate_rating}, and I think you might like it."
+  - text: "How would you consider watching {title}? This movie's average rating is {aggregate_rating}."
+  - text: "I found 1 movie for you titled {title} and it has a {aggregate_rating} star rating. Does that sound appealing?"
+  - text: "There's 1 movie you might like. It's called {title} and it has an average rating of {aggregate_rating}"
+  - text: "Here's 1 for you: how about {title}? That's got a rating of {aggregate_rating}"
+  - text: "There's 1 movie you might like. How does {title} with a {aggregate_rating} rating sound?"
+  - text: "I found 1 movie. {title} with a rating of {aggregate_rating}."
+  - text: "I found 1 movie you might like. How about {title}? The movie has an average rating of {aggregate_rating}."
+  - text: "Search revealed 1 movie. Do you like {title}. It is rated {aggregate_rating}."
+  - text: "I have 1, what about {title}, it has a rating of {aggregate_rating} stars"
+  - text: "I found 1 you might like. How about {title}? It's rated {aggregate_rating}"
+  - text: "I found 1, how about {title}, it is rated {aggregate_rating}"
+  - text: "I can see that there is 1 movie which you might like. How would like watching {title}? This movie's rating is at {aggregate_rating}."
+  - text: "There is 1 movie rated {aggregate_rating} called {title}."
+  - text: "Search revealed {count} result. Do you like {title}? It has a {aggregate_rating} rating."
+  - text: "I can help with that! I've got {count} movies here - how do you feel about {title}? I've had a look at it has an average rating of {aggregate_rating}"
+  - text: "I found {count} movies for you. There's {title}, rated {aggregate_rating}."
+  - text: "I've got {count} possible results. How do you feel about {title}? Its rating is {aggregate_rating}."
+  - text: "I have found {count} movies. Would you like to watch {title}. It has a rating of {aggregate_rating}."
+  - text: "I found {count} movies including {title} rated {aggregate_rating}."
+  - text: "I've found {count} movies that match that criteria. How about {title}? The average rating of this movie is {aggregate_rating}."
+
+  utter_more:
+  - text: "Do you need any more help?"
+  - text: "Can I help with anything else?"
+  - text: "Is there anything else you need?"
+  - text: "Do you want me to help with anything else?"
+  - text: "Do you need something more?"
+  - text: "Need help with anything else?"
+  - text: "Anything else I can get you?"
+  - text: "Is there anything else?"
+  - text: "Anything else?"
+  - text: "Anything else I can help with?"
+  - text: "Great. Is there anything else you need?"
+  - text: "Is there something else I can help you with?"
+
+  utter_goodbye:
+  - text: "Happy to have helped."
+  - text: "I'm glad I could help you."
+  - text: "You're welcome."
+  - text: "Glad that I could have helped"
+  - text: "I'm glad to have helped you."
+  - text: "No problem, enjoy the movie"
+  - text: "I am glad to help you."
+  - text: "Glad to have helped you"
+  - text: "I'm always happy to help out."
+  - text: "You're welcome."
+  - text: "Glad to help."
+  - text: "Happy to help."
+  - text: "Great. Have a nice day."
+  - text: "Glad I could help"
+  - text: "Happy to help"
+  - text: "I'm glad I could have helped you. Bye."
+  - text: "Glad to be of service."
+  - text: "I am happy to be of assistance."
+  - text: "I'm glad to have been able to help. Enjoy your night."
+  - text: "I am glad to have helped you."
+
+  utter_inform_gendir:
+  - text: "This is a {genre} movie directed by {director}."
+  - text: "It's by {director} and it's a {genre}."
+  - text: "{director} directed the movie and it is considered to be a {genre}."
+
+  utter_inform_genre:
+  - text: "{title} is a {genre}"
+  - text: "{genre}."
+
+  utter_inform_director:
+  - text: "It was directed by {director}"
+  - text: "The director of the movie is {director}."
+  - text: "Director is {director}."
+
+  utter_inform_starring:
+  - text: "{starring} starred in the movie."
+
+actions:
+- action_offer
+- action_bye
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
