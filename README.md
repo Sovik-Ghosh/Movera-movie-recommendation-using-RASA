@@ -85,23 +85,23 @@ You can modify the existing data .yml files.
 
 2. [Stories](data/stories.yml):
 
-  -  Rasa stories contain paths for training the data. It defines example conversations between the user and the chatbot or the agent. Rasa’s machine-learning model, dialogue management system learns from the training data that showcases different paths a model can take during a conversation. Movera's story path states that when the current intent is ‘FindMovies’ it performs ‘action_offer’, else if the intent is ‘Other’ it performs ‘action_bye’, which are custom actions respectively.
+  - Rasa stories contain paths for training the data. It defines example conversations between the user and the chatbot or the agent. Rasa’s machine-learning model, dialogue management system learns from the training data that showcases different paths a model can take during a conversation. Movera's story path states that when the current intent is ‘FindMovies’ it performs ‘action_offer’, else if the intent is ‘Other’ it performs ‘action_bye’, which are custom actions respectively.
 
 
 3. [Rules](data/rules.yml):
 
-  -  Rasa rules contain an absolute function call when a particular intent is detected. It defines that when a specific intent is detected a particular response will be performed irrespective of the story path. Movera’s rule path states that when intent ‘FindMovies’ is detected it will perform the custom action ‘action_offer’. Similarly, when intent ‘Other’ is detected it will always trigger the custom action ‘action_bye’. Rules are not mandatory but helpful when there are story clashes, or when adequate story path and proper training data have not been provided.
+  - Rasa rules contain an absolute function call when a particular intent is detected. It defines that when a specific intent is detected a particular response will be performed irrespective of the story path. Movera’s rule path states that when intent ‘FindMovies’ is detected it will perform the custom action ‘action_offer’. Similarly, when intent ‘Other’ is detected it will always trigger the custom action ‘action_bye’. Rules are not mandatory but helpful when there are story clashes, or when adequate story path and proper training data have not been provided.
 
 
 
 4. [Domain](domain.yml):
 
-	- The Rasa domain file contains the complete universe of Movera. It consists of all the intents, entities, slots, responses, and actions.
+  - The Rasa domain file contains the complete universe of Movera. It consists of all the intents, entities, slots, responses, and actions.
 
 
 5. [Custom Actions](actions/actions.py):
 
-	- Movera has been designed with two custom actions for dynamic results based on the user’s search. The custom actions either offer the user movie recommendations or answers to the user’s enquiry.
+  - Movera has been designed with two custom actions for dynamic results based on the user’s search. The custom actions either offer the user movie recommendations or answers to the user’s enquiry.
 
     - ***action_offer***: The action_offer function with the help of configurations like ‘DIETClassifier’, and ‘CRFEntityExtractor’ detects the intent of the user’s dialogue, and extracts the relevant entities to process a featured movie recommendation further. This function is triggered when the intent ‘FindMovies’ is detected. It creates a dictionary of entity types and entity values to account for the director’s name, actor’s name, and genre related enquiry. It sends slot values and utters responses like utter_offer, utter_inform_gendir, utter_inform_genre, utter_inform_director, and utter_inform_starring.
 
@@ -110,7 +110,7 @@ You can modify the existing data .yml files.
 
 6. [TMDB](utils/util.py):
 
-	- Movera uses ‘tmdbv3api’ as the backend to perform multiple queries and prompt the best movie recommendations. A modular approach has been used to adhere to different enquiries.
+  - Movera uses ‘tmdbv3api’ as the backend to perform multiple queries and prompt the best movie recommendations. A modular approach has been used to adhere to different enquiries.
 
     - **get_genre**: This function takes in the movie title and returns the genre name.
 
