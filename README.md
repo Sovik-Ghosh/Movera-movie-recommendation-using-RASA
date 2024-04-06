@@ -38,7 +38,7 @@ The chatbot uses an extensive range of frameworks:-
   <img src="/assets/Flow.png" alt="Flow Image" style="width: 50%; height: auto;">
 </div>
 
-## Running the Simulation
+## Running the Chatbot
 
 1. Open two terminal windows
 
