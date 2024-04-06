@@ -130,4 +130,4 @@ If you would like to contribute to this project, please follow our [contribution
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
