@@ -1,5 +1,5 @@
 <div style="display: flex; flex-direction: row;">
-  <img src="/assets/app.logomakr.com_28ja6E-ezgif.com-crop.gif" alt="Flow Image" style="width: 50%; height: auto;">
+  <img src="/assets/app.logomakr.com_28ja6E-ezgif.com-crop.gif" alt="Flow Image" style="width: 1000px; height: auto;">
 </div>
 
 The new era enhances the visual experience with creative arts and computer-generated imagery. Therefore, to showcase visually stimulated movies, ’Movera’, a chatbot has been developed to take movie requests as user input and then process the best movie recommendation.
