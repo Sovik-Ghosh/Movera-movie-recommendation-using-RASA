@@ -16,7 +16,7 @@ The chatbot uses an extensive range of frameworks:-
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Sovik-Ghosh/Movera.git
+   https://github.com/Sovik-Ghosh/Movera-movie-recommendation-using-RASA.git
    ```
 
 2. Create a virtual environment:
