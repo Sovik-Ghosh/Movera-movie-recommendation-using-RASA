@@ -85,6 +85,12 @@ responses:
   - text: "I have found {count} movies. Would you like to watch {title}. It has a rating of {aggregate_rating}."
   - text: "I found {count} movies including {title} rated {aggregate_rating}."
   - text: "I've found {count} movies that match that criteria. How about {title}? The average rating of this movie is {aggregate_rating}."
+  - text: "I found a great option for you: {title}. It's rated {aggregate_rating}."
+  - text: "Consider {title}, which has a solid rating of {aggregate_rating}."
+  - text: "{title} might be a good choice with its rating of {aggregate_rating}."
+  - text: "Maybe you'll like {title}, it has a rating of {aggregate_rating}."
+  - text: "If you're interested, {title} has an average rating of {aggregate_rating}."
+  - text: "For a {genre} movie, {title} is rated {aggregate_rating}."
 
   utter_more:
   - text: "Do you need any more help?"
@@ -99,6 +105,12 @@ responses:
   - text: "Anything else I can help with?"
   - text: "Great. Is there anything else you need?"
   - text: "Is there something else I can help you with?"
+  - text: "Would you like help with anything else?"
+  - text: "Can I assist you with something else?"
+  - text: "What else can I do for you?"
+  - text: "Is there any other way I can help?"
+  - text: "Is there another movie you are looking for?"
+  - text: "Would you like another recommendation?"
 
   utter_goodbye:
   - text: "Happy to have helped."
@@ -121,23 +133,40 @@ responses:
   - text: "I am happy to be of assistance."
   - text: "I'm glad to have been able to help. Enjoy your night."
   - text: "I am glad to have helped you."
+  - text: "Enjoy your movie!"
+  - text: "Hope you enjoy watching the movie!"
+  - text: "Take care and enjoy the film!"
+  - text: "Have a great time watching the movie!"
 
   utter_inform_gendir:
   - text: "This is a {genre} movie directed by {director}."
   - text: "It's by {director} and it's a {genre}."
   - text: "{director} directed the movie and it is considered to be a {genre}."
+  - text: "This {genre} film was directed by {director}."
+  - text: "Directed by {director}, this is a {genre} film."
+  - text: "The {genre} movie {title} is directed by {director}."
 
   utter_inform_genre:
   - text: "{title} is a {genre}"
   - text: "{genre}."
+  - text: "The movie {title} falls under the {genre} genre."
+  - text: "{title} belongs to the {genre} category."
+  - text: "It's a {genre} film."
 
   utter_inform_director:
-  - text: "It was directed by {director}"
+  - text: "It was directed by {director}."
   - text: "The director of the movie is {director}."
   - text: "Director is {director}."
+  - text: "{director} directed this movie."
+  - text: "This movie was directed by {director}."
+  - text: "The film's director is {director}."
 
   utter_inform_starring:
   - text: "{starring} starred in the movie."
+  - text: "This movie stars {starring}."
+  - text: "{starring} is the star of this movie."
+  - text: "The lead actor/actress is {starring}."
+  - text: "This film features {starring}."
 
 actions:
 - action_offer
